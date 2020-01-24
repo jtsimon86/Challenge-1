@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'poppins', ' sans-serif';
+      font-weight: 200;
+      font-size: 16px;
+   
+    }
+    .wrapper {
+      width: 100%;
+      margin: 0 auto;
+      /* box-shadow: 5px 10px 15px #dbdbdb; */
+      background-color: white;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.5;
+      margin-top: 40px;
+      font-weight: 200;
+    }
+
+    h1 span{
+      font-weight: 600;
+    }
+
+     h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: .8em;
+    }
+
+    p.tagline {
+      font-size: 1em;
+      padding: 30px;
+    }
+
+    section {
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .img-right img {
+      width: 45px;
+    }
+
+     .box {
+      background-color: white;
+      color: #434449;
+      width: 70%;
+      padding: 10px 20px;
+      box-shadow: 5px 10px 15px #dbdbdb;
+      text-align: left;
+    }
+
+    .box-green {
+      border-top: 2px solid #3ab1af;
+      margin: 0  auto 20px;
+    }
+
+    .box-yellow {
+      border-top: 2px solid #d8a347;
+      margin: 0  auto 20px;
+    }
+
+    .box-red {
+      border-top: 2px solid #bd2220;
+      margin: 0  auto 20px;
+    }
+
+    .box-blue {
+      border-top: 2px solid #4480bc;
+      margin: 0  auto 20px;
+    }
+
+    .img-right {
+        text-align: right;
+      }
+
+    @media only screen and (min-width: 650px) {
+
+      body {
+        background-image: url("images/bg-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .wrapper {
+        width: 80%;
+        margin: 50px  auto 0;
+        box-shadow: 5px 10px 15px #dbdbdb;
+      }
+
+      section {
+        padding-bottom: 60px;
+      }
+
+      h1 {
+        font-size: 2em;
+        line-height: 1.5;
+        margin-top: 40px;
+        font-weight: 200;
+      }
+
+      h1 span {
+        font-weight: 600;
+      }
+
+      p.tagline {
+        font-size: 1em;
+        margin: 0 auto;
+        width: 50%;
+      }
+
+      .img-right {
+        text-align: right;
+      }
+
+      .col {
+        width: 30%;
+        height: 350px;
+        display: inline-block;
+        position: relative;
+      }
+
+      .col .box-blue, .box-green {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .box {
+        width: 90%;
+      }
+
+     
+    }
+    
+    .attribution { font-size: 11px; text-align: center; padding-bottom: 30px;}
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+    <h1>Reliable, efficient delivery<br><span>Powered by Technology</span></h1>
+
+    <p class="tagline">Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p>
+  </header>
+
+  <section>  
+      <div class="col">
+        <div class="box box-green">
+          <h2>Supervisor</h2>
+          <p>Monitors activity to identify project roadblocks</p>
+          <div class="img-right">
+            <img src="images/icon-supervisor.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box box-red">
+          <h2>Team Builder</h2>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <div class="img-right">
+            <img src="images/icon-team-builder.svg" />
+          </div>
+        </div>
+
+        <div class="box box-yellow">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div class="img-right">
+            <img src="images/icon-karma.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box box-blue">
+          <h2>Calculator</h2>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <div class="img-right">
+            <img src="images/icon-calculator.svg" />
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Janie Simon</a>.
+    </p>
+  </footer>
+
+  </div>
+ 
+</body>
+</html>
